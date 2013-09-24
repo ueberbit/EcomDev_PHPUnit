@@ -5,7 +5,7 @@ if (version_compare(PHP_VERSION, '5.3', '<')) {
     exit(1);
 }
 
-$_baseDir = getcwd();
+$_baseDir = realpath(dirname(__FILE__) . '/../../../../../');
 
 
 // Include Mage file by detecting app root
